@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fef3e4;
+  color: #1a1a1a;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 30px 50px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.decor-circle {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fcd5a8 0%, #fbd5ad 100%);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.circle-1 {
+  width: 40px;
+  height: 40px;
+  top: 30%;
+  left: 5%;
+}
+
+.circle-2 {
+  width: 20px;
+  height: 20px;
+  top: 25%;
+  left: 30%;
+}
+
+.circle-3 {
+  width: 30px;
+  height: 30px;
+  top: 60%;
+  left: 48%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 40px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nav a.active {
+  font-weight: 700;
+}
+
+.nav a:hover {
+  color: #e2811a;
+}
+
+.search-box {
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  width: 250px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.search-box button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #888;
+}
+
+.hero {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-circle {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background-color: #fee7c8;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.dog-img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.arrow-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #1a1a1a;
+  transition: transform 0.2s;
+}
+
+.arrow-btn:hover {
+  transform: scale(1.2);
+}
+
+.hero-right {
+  flex: 1;
+  padding-left: 50px;
+}
+
+.hero-right h1 {
+  font-size: 54px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.hero-right p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4a4a4a;
+  margin-bottom: 40px;
+  max-width: 500px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #e68819 0%, #d4750b 100%);
+  color: #fff;
+  border: none;
+  padding: 15px 45px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(230, 136, 25, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px rgba(230, 136, 25, 0.4);
+}
+
+.bottom-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #1a1a1a;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.scroll-down:hover {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+  gap: 25px;
+  margin-left: auto;
+}
+
+.social-links a {
+  font-size: 18px;
+  color: #1a1a1a;
+  transition: color 0.2s;
+}
+
+.social-links a:hover {
+  color: #e68819;
+}
