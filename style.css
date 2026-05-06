@@ -262,3 +262,225 @@ ul {
 .social-links a:hover {
   color: #e68819;
 }
+/* --- BREEDS --- */
+.breeds {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.breeds h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.breeds p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.breed-list {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.breed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.breed img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.breed span {
+  font-size: 14px;
+}
+
+/* --- PRODUCTS --- */
+.products {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.left {
+  max-width: 300px;
+}
+
+.left h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.left p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.left button {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  align-items: center;
+}
+.blog {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.blog h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 40px;
+}
+
+/* --- КАРТОЧКИ --- */
+.blog-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 220px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  padding-bottom: 15px;
+
+  /* 🔥 тінь як в макеті */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+  transition: 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* 🔥 hover ефект */
+.card:hover {
+  transform: translateY(-8px);
+}
+/* NEWSLETTER */
+
+.newsletter {
+  width: 80%;
+  margin: 50px auto;
+  background: #e8d4b8;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.dog {
+  width: 150px;
+}
+
+.news-text h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.news-text p {
+  color: #555;
+  margin: 10px 0 20px;
+}
+
+.news-text input {
+  padding: 12px;
+  width: 250px;
+  border: none;
+  border-radius: 20px;
+  background: #eee;
+}
+
+.news-text button {
+  padding: 12px 25px;
+  border: none;
+  background: #f08a00;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #dfe3e7;
+  padding: 40px 60px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links li {
+  margin: 8px 0;
+}
+
+.contact p {
+  margin: 5px 0;
+}
+
+.map img {
+  width: 450px;
+  border-radius: 10px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.social span {
+  margin: 0 10px;
+}
